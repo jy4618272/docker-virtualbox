@@ -5,6 +5,7 @@ docker cp virtualbox:/usr/lib/virtualbox/vboxdrv.sh .
 sudo docker cp virtualbox:/usr/share/virtualbox /usr/share
 
 # recompile virtualbox kernel
+sudo apt-get install make gcc
 sudo ./vboxdrv.sh setup
 
 # clean up unneeded stuffs
