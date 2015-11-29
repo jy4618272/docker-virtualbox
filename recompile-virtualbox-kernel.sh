@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# copy needed stuffs from container
+# copy needed stuffs from container to re-compile virtualbox kernel
 docker cp virtualbox:/usr/lib/virtualbox/vboxdrv.sh .
 sudo docker cp virtualbox:/usr/share/virtualbox /usr/share
 

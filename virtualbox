@@ -1,8 +1,8 @@
 #!/bin/bash
 
 exec docker run --rm \
-    -v /tmp/.X11-unix:/tmp/.X11-unix \
     -e DISPLAY=unix$DISPLAY \
+    -v /tmp/.X11-unix:/tmp/.X11-unix:ro \
     --privileged \
     -v /mnt/docker-data/configs/virtualbox:/home/vu/VirtualBox \
     --name virtualbox \
